@@ -5,7 +5,7 @@
   "author": "gv@timeular.com",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/notjosh/bleno-mac.git"
+    "url": "https://github.com/TOKU-Systems/bleno-mac.git"
   },
   "main": "index.js",
   "gypfile": true,
@@ -16,10 +16,10 @@
     "darwin"
   ],
   "dependencies": {
+    "@mapbox/node-pre-gyp": "^1.0.5",
+    "bleno": "npm:@abandonware/bleno@^0.5.1-4",
     "napi-thread-safe-callback": "0.0.6",
-    "bleno": "^0.5.0",
-    "node-addon-api": "^1.1.0",
-    "node-pre-gyp": "^0.10.0"
+    "node-addon-api": "^1.7.2"
   },
   "scripts": {
     "install": "node-pre-gyp install --fallback-to-build",
@@ -34,7 +34,7 @@
   "binary": {
     "module_name": "bleno_mac",
     "module_path": "./native/",
-    "host": "https://github.com/notjosh/bleno-mac/releases/download/",
+    "host": "https://github.com/TOKU-Systems/bleno-mac/releases/download/",
     "remote_path": "{version}"
   }
 }
